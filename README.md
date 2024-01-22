@@ -1,4 +1,5 @@
 **Problem Statement:
+
 Managing urban traffic has become a major challenge, with significant consequences on the daily lives of citizens. Traffic jams, accidents, and other incidents on roads can lead to significant disruptions. It is in this context that our application intervenes by centralizing and monitoring data on the road network from various sources.
 
 **Solution:
@@ -10,6 +11,7 @@ User-Friendly Interface:
 The user interface of our application has been carefully designed to provide a user-friendly and intuitive experience.
 
 **Data Collection:
+
 To retrieve information on road traffic, we have used various sources to ensure reliable and continuous data collection, such as:
 
 Integration of Social Media APIs:
@@ -30,6 +32,7 @@ Language: Java & JavaScript.
 Tools: React & Spring Boot & Postgres.
 
 **Demo:
+
 Accidendt:
 ![alt text](https://github.com/manarfareh/My-Road/blob/main/Demo/Accidendt.png?raw=true)
 
