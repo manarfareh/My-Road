@@ -1,0 +1,45 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://spring.io/guides/roadclosures"
+           targetNamespace="http://spring.io/guides/roadclosures"
+           xmlns="http://spring.io/guides/roadclosures"
+           elementFormDefault="qualified">
+
+    <!-- Define complex type for road closure -->
+    <xs:element name="Road">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="routeId" type="xs:long"/>
+                <xs:element name="routeName" type="xs:string"/>
+                <xs:element name="routeCountry" type="xs:string"/>
+                <xs:element name="routeCity" type="xs:string"/>
+                <xs:element name="timeClosure" type="xs:string"/>
+                <xs:element name="dayClosure" type="xs:string"/>
+                <xs:element name="reasonClosure" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Define complex type for the list of road closures -->
+    <xs:element name="Roads">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tns:Road" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Define complex type for GetRoads request -->
+    <xs:element name="GetAllRoads">
+        <xs:complexType/>
+    </xs:element>
+
+    <!-- Define complex type for GetRoads response -->
+    <xs:element name="GetAllRoadsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tns:Roads"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
