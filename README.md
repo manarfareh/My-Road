@@ -20,6 +20,8 @@ Static Data:
 We used static data on perceived traffic jams and road closures.
 Web Pages:
 We collected data on accidents from Tunisian websites.
+
+
 **REST and SOAP Web Services:
 
 REST Web Service:
