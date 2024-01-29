@@ -21,7 +21,7 @@ We used the Meteomatics API to collect weather data.
 Static Data:
 We used static data on perceived traffic jams and road closures.
 
-Web Pages:
+Web scraping:
 We collected data on accidents from Tunisian websites.
 
 
